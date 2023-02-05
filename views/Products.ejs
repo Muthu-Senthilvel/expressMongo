@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> All Store Products </title>
+</head>
+<body>
+    <h1> All Store Products </h1>
+    <ul>
+        <% for(var i=0; i<findProducts.length; i++) {%>
+           <li>  <a href="/products/<%=findProducts[i]._id%>">  <%=findProducts[i].name%>  </a>  </li>
+        <% } %>
+    </ul>
+    <a href="/products/insert">New insertion</a>   
+</body>
+</html>
